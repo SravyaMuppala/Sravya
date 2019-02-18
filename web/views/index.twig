@@ -1,57 +1,97 @@
-{% extends "layout.html" %}
 
 {% block content %}
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="/images/lang-logo.png">
-    </a>
-    <h1>Started with PHP on Heroku</h1>
-    <p>This is a sample PHP application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-php"><span class="glyphicon glyphicon-flash"></span> Getting Started with PHP</a>
-    <a type="button" class="btn btn-lg btn-primary" href="https://github.com/heroku/php-getting-started"><span class="glyphicon glyphicon-download"></span> Source on GitHub</a>
-  </div>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="Stylesheet" type="text/css" href="main.css"/>
+<div class="Background">
+<div class="img">
+   <center> <img src="https://img.grouponcdn.com/deal/3x6NGhMeMyv2TT5UCryYCwL8RThJ/3x-2048x1229/v1/c620x376.jpg" class="img-rounded"/></center>
+    <Center><h1><B>Niagara Falls</B></h1></Center>
+    <center><p>Niagara Falls is famed both for its beauty and as a valuable source of hydroelectric power.</p></center>
+    <center><a type="button" class="btn btn-lg btn-primary" href="https://en.wikipedia.org/wiki/Niagara_Falls"><span class="badge badge-secondary"></span> About Niagara Falls</a></center>
 </div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-php" class="alert-link">Getting Started with PHP on Heroku</a> tutorial.
-  </div>
+</head>
+    <Head>
+        <Style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 15px;
+            }
+        </Style>
+    </Head>
   <hr>
   <div class="row">
     <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
+      <h3><span class="glyphicon glyphicon-info-sign"></span> DID YOU KNOW?</h3>
       <ul>
-        <li>This app was deployed to Heroku, either using Git or by using <a href="https://github.com/heroku/php-getting-started">Heroku Button</a> on the repository.</li>
-
-        <li>When Heroku received the source code, it fetched all the dependencies in the <a href="https://github.com/heroku/php-getting-started/blob/master/composer.json">composer.json</a>, creating a deployable slug.</li>
-        <li>The platform then spins up a dyno, a lightweight container that provides an isolated environment in which the slug can be mounted and executed.</li>
-        <li>You can scale your app, manage it, and deploy over <a href="https://addons.heroku.com/">150 add-on services</a>, from the Dashboard or CLI.</li>
+          <li>one-fifth of the worlds fresh water passes over Niagara Falls.</li>
+          <li>Niagara Falls supplies 10% of all the electric power for New York State.</li>
+          <li>Niagara Falls is now a highly-managed natural wonder. One-half to three-quarters of the water doesn’t go over the falls anymore. Instead, it gets diverted into tunnels for the production of electricity. In fact, at nightafter the lights are turned off, the falls are dialed way back and a huge percentage of the water is diverted for electricity generation.</li>
       </ul>
     </div>
+      <div>
+          <h3><span class="glyphicon glyphicon-info-sign"></span> Best Time to Visit</h3>
+          <p> The best time to visit Niagara Falls State Park is during the summer months when the average monthly high temperature ranges between 70F and 80F. Because summer is peak season, you'll face more crowds and spend more money on hotel accommodations, but all of the attractions are open including Maid of the Mist and Cave of the Winds. During winter, spring and fall, crowds tend to be less, hotel room rates drop and the unique change of seasons is well worth a visit. In fall, peak foliage is generally the third week in October, while winter brings snow and ice that transforms the Falls into a stunning winter wonderland.</p>
+      </div>
     <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Next Steps</h3>
+      <h3><span class="glyphicon glyphicon-link"></span> Transport</h3>
       <ul>
-        <li>If you are following the <a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started</a> guide, then please head back to the tutorial and follow the next steps!</li>
-        <li>If you deployed this app by deploying the Heroku Button, then in a command line shell, run:</li>
-        <ul>
-          <li><code>git clone https://github.com/heroku/php-getting-started.git</code> - this will create a local copy of the source code for the app</li>
-          <li><code>cd php-getting-started</code> - change directory into the local source code repository</li>
-          <li><code>heroku git:remote -a &lt;your-app-name></code> - associate the Heroku app with the repository</li>
-          <li>You'll now be set up to run the app locally, or <a href="https://devcenter.heroku.com/articles/getting-started-with-php#push-local-changes">deploy changes</a> to Heroku</li>
+          <li>Ships can bypass Niagara Falls by means of the <a href="https://en.wikipedia.org/wiki/Welland_Canal">Welland Canal</a> which was improved and incorporated into the Saint Lawrence Seaway in the mid-1950s.</li>
+        <li>The cities of Niagara Falls, Ontario, Canada, and Niagara Falls, New York, United States, are connected by two international bridges.</li>
+
+          <li>The Rainbow Bridge, just downriver from the falls, affords the closest view of the falls and is open to non-commercial vehicle traffic and pedestrians.</li>
+          <li>The Whirlpool Rapids Bridge lies one mile (1.6 km) north of the Rainbow Bridge and is the oldest bridge over the Niagara River.</li>
+          <li>The Buffalo Niagara International Airport is the closest airport - approximately 19 miles from Niagara Falls USA.</li>
         </ul>
       </ul>
       <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
       <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/">Heroku Dev Center</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started with PHP on Heroku</a></li>
-        <li><a href="https://devcenter.heroku.com/articles/deploying-php">Deploying PHP Apps on Heroku</a></li>
+        <li><a href="https://www.niagarafallsusa.com/">Niagara Falls USA</a></li>
       </ul>
     </div>
+      <h2>Niagara Falls Attractions & Tours</h2>
+
+      <table style="width:100%">
+          <tr>
+              <th>Attractions</th>
+              <th>Entry Fees for Adults</th>
+              <th>Entry Fees for Youth</th>
+              <th>Hours of Operation</th>
+          </tr>
+          <tr>
+              <td>Adventure Theater</td>
+              <td>$8 per person</td>
+              <td>$6 per person</td>
+              <td>10:30 a.m.- 4:30 p.m. (Daily)</td>
+          </tr>
+          <tr>
+              <td>Aquarium</td>
+              <td>$14.95</td>
+              <td>$10.9</td>
+              <td>9 a.m. - 5 p.m. (Daily)</td>
+          </tr>
+          <tr>
+              <td>Cave of the winds</td>
+              <td>$7</td>
+              <td>$5</td>
+              <td>9 a.m. - 3 p.m. (Daily)</td>
+          </tr>
+          <tr>
+              <td>Observation Tower</td>
+              <td>$1.25</td>
+              <td>$1.25</td>
+              <td>10 a.m. - 4:30 p.m. (Daily)</td>
+          </tr>
+      </table>
+      </body>
+</html>
+
   </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work through the Getting Started guide, even if you do know how to build such an application.  The guide covers the basics of working with Heroku, and will familiarize you with all the concepts you need in order to build and deploy your own apps.
-  </div>
 </div>
 
+</html>
 {% endblock %}
